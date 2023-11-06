@@ -1,0 +1,15 @@
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\bin\Debug\net6.0\StartpageManager.exe
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\bin\Debug\net6.0\StartpageManager.deps.json
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\bin\Debug\net6.0\StartpageManager.runtimeconfig.json
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\bin\Debug\net6.0\StartpageManager.dll
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\bin\Debug\net6.0\StartpageManager.pdb
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\obj\Debug\net6.0\StartpageManager.csproj.AssemblyReference.cache
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\obj\Debug\net6.0\StartpageManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\obj\Debug\net6.0\StartpageManager.AssemblyInfoInputs.cache
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\obj\Debug\net6.0\StartpageManager.AssemblyInfo.cs
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\obj\Debug\net6.0\StartpageManager.csproj.CoreCompileInputs.cache
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\obj\Debug\net6.0\StartpageManager.dll
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\obj\Debug\net6.0\refint\StartpageManager.dll
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\obj\Debug\net6.0\StartpageManager.pdb
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\obj\Debug\net6.0\StartpageManager.genruntimeconfig.cache
+C:\Users\Test Wilkes\Desktop\desktop C#\Projekte\2023 10 19\StartpageManager\StartpageManager\obj\Debug\net6.0\ref\StartpageManager.dll
