@@ -1,0 +1,131 @@
+<html>
+    <head>  
+        <meta charset="utf-8" />
+        <title>Personal Startpage</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+        
+        <style>
+        .Headline{
+            font-size:250%;
+            color: ghostwhite;
+            font-family: 'Asap', sans-serif;
+            margin-bottom: 5px;
+            padding-top: 30px;
+            padding-left: 10px;
+            clear: both;
+        }    
+        .PageLink{
+            font-size:150%;
+            color: darkgray;
+            font-family: 'Asap', sans-serif;
+            margin-bottom:3px;
+            padding-left: 15px;
+            clear: both;
+        }
+        .PageLink:hover{
+            color: red;
+        }
+        #Background {
+            position: fixed;
+            z-index: -2;
+        }
+        </style>
+        
+        <script>
+        function blockAtTime(fromTimeHour, fromTimeMin, toTimeHour, toTimeMin, timeID) {
+            const currentDate = new Date();
+            const currentHour = currentDate.getHours();
+            const currentMin = currentDate.getMinutes();
+            if(fromTimeHour > toTimeHour || (fromTimeHour == toTimeHour && fromTimeMin > toTimeMin)){
+               if(fromTimeHour < currentHour || toTimeHour > currentHour){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren();
+                } else if (fromTimeHour == currentHour && toTimeHour == currentHour && fromTimeMin >= currentMin && toTimeMin <= currentMin){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren();
+                } else if(fromTimeHour == currentHour && fromTimeMin <= currentMin){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren(); 
+                } else if(toTimeHour == currentHour && toTimeMin >= currentMin){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren();
+                }
+            } else{ 
+                if(fromTimeHour < currentHour && toTimeHour > currentHour){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren();
+                } else if (fromTimeHour == currentHour && toTimeHour == currentHour && fromTimeMin <= currentMin && toTimeMin >= currentMin){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren();
+                } else if(fromTimeHour == currentHour && fromTimeMin <= currentMin){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren(); 
+                } else if(toTimeHour == currentHour && toTimeMin >= currentMin){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren();
+                }
+            }
+        }
+        </script>
+        
+    </head>
+    
+    
+    <body>        
+        <div id="Background"><img src="StartpageTemplates/Background.png";  width="100%"; height="auto";></div>
+<div><p class="Headline">Unterhaltung</p></div>
+<div><p><a href="https://www.youtube.com/feed/subscriptions" class="PageLink" target="_blank">Youtube</a></p></div>
+<div><p><a href="https://www1.wdr.de/radio/player/radioplayer102~_layout-popupVersion.html" class="PageLink" target="_blank">Radio_WDR</a></p></div>
+<div><p><a href="https://campusfm.info/" class="PageLink" target="_blank">Campus_FM</a></p></div>
+<div><p class="Headline">Tools</p></div>
+<div><p><a href="https://translate.google.com/?sl=en&tl=de&op=translate&hl=de" class="PageLink" target="_blank">Google_Uebersetzter</a></p></div>
+<div><p><a href="https://www.google.de/maps" class="PageLink" target="_blank">Google_Maps</a></p></div>
+<div><p><a href="https://www.gmx.net/" class="PageLink" target="_blank">GMX_EMail</a></p></div>
+<div><p><a href="https://www.wikipedia.de/" class="PageLink" target="_blank">Wikipedia</a></p></div>
+<div><p><a href="https://web.whatsapp.com/" class="PageLink" target="_blank">WhatsApp_Web</a></p></div>
+<div><p class="Headline">AI_Tools</p></div>
+<div><p><a href="https://chat.openai.com/auth/login" class="PageLink" target="_blank">ChatGPT</a></p></div>
+<div><p><a href="https://www.deepl.com/de/translator" class="PageLink" target="_blank">DeepL</a></p></div>
+<div><p><a href="https://labs.openai.com/" class="PageLink" target="_blank">DALLE</a></p></div>
+<div><p><a href="https://www.craiyon.com/" class="PageLink" target="_blank">craiyon</a></p></div>
+<div><p class="Headline">Studium</p></div>
+<div><p><a href="https://moodle.uni-due.de/my/" class="PageLink" target="_blank">Moodle</a></p></div>
+<div><p><a href="https://campus.uni-due.de/lsf/rds?state=wplan&act=show&show=plan&P.subc=plan&navigationPosition=functions%2Cschedule&breadcrumb=schedule&topitem=functions&subitem=schedule" class="PageLink" target="_blank">Campus_LSF</a></p></div>
+<div><p><a href="https://campus.uni-due.de/cm/pages/cs/sys/portal/hisinoneStartPage.faces" class="PageLink" target="_blank">Campus_HisInOne</a></p></div>
+<div><p><a href="https://webmailer.uni-due.de/" class="PageLink" target="_blank">Uni_EMail</a></p></div>
+<div><p><a href="https://www.studydrive.net/de/uni/universitat-duisburg-essen/895?content=courses&p=1&sort_type_courses=students&university_id=895" class="PageLink" target="_blank">StudyDrive</a></p></div>
+<div><p class="Headline">Geschäftliche_Sozial_Media</p></div>
+<div><p><a href="https://www.linkedin.com/in/quentin-w-353ab6253" class="PageLink" target="_blank">LinkedIn</a></p></div>
+<div><p><a href="https://github.com/QuenWi" class="PageLink" target="_blank">GitHub</a></p></div>
+<div><p class="Headline">Soziale_Medien</p></div>
+<div><p><a href="https://mastodon.social/start" class="PageLink" target="_blank">Mastodon</a></p></div>
+<div><p><a href="https://www.reddit.com/" class="PageLink" target="_blank">Reddit</a></p></div>
+<div><p><a href="https://web.whatsapp.com/" class="PageLink" target="_blank">WhatsApp_Web</a></p></div>
+<div><p class="Headline">Programmieren_Community_Forum</p></div>
+<div><p><a href="https://hashnode.com/explore/tags-following" class="PageLink" target="_blank">Hashnode</a></p></div>
+<div><p><a href="https://dev.to/latest" class="PageLink" target="_blank">Dev.to_Forum</a></p></div>
+<div><p><a href="https://stackoverflow.com/" class="PageLink" target="_blank">StackOverflow</a></p></div>
+<div><p><a href="https://www.kaggle.com/code" class="PageLink" target="_blank">Kaggle</a></p></div>
+<div><p><a href="https://news.ycombinator.com/" class="PageLink" target="_blank">HackerNews</a></p></div>
+<div><p><a href="https://www.indiehackers.com/" class="PageLink" target="_blank">IndieHackers</a></p></div>
+<div><p><a href="https://bootstrap.academy/skill-tree" class="PageLink" target="_blank">BootstrapAcademy</a></p></div>
+<div><p class="Headline">Programmieren_Community_Podcast</p></div>
+<div><p><a href="https://www.codenewbie.org/podcast" class="PageLink" target="_blank">Code_Newbie</a></p></div>
+<div><p><a href="https://dev.to/pod" class="PageLink" target="_blank">Dev.to_Podcast</a></p></div>
+<div><p class="Headline">Programmieren_Community_News</p></div>
+<div><p><a href="https://www.sitepoint.com/blog/" class="PageLink" target="_blank">SitePointCommunity</a></p></div>
+<div><p><a href="https://hackernoon.com/tagged/hackernoon-top-story" class="PageLink" target="_blank">Hackernoon</a></p></div>
+<div><p class="Headline">Programmieren_Weiteres</p></div>
+<div><p><a href="http://quentin.wilkes.es/" class="PageLink" target="_blank">Eigende_Website</a></p></div>
+<div><p class="Headline">Nachrichten_Politik</p></div>
+<div><p><a href="test" class="PageLink" target="_blank">test</a></p></div>
+<div><p class="Headline">Nachrichten_Positive</p></div>
+<div><p><a href="test" class="PageLink" target="_blank">test</a></p></div>
+<div><p class="Headline">Einkaufen</p></div>
+<div><p><a href="https://www.amazon.de/" class="PageLink" target="_blank">Amazon</a></p></div>
+<div><p><a href="https://de.camelcamelcamel.com/" class="PageLink" target="_blank">Camel</a></p></div>
+<div><p><a href="https://www.billabong.de/herren/" class="PageLink" target="_blank">Billabong</a></p></div>
+<div id="timeID0"><p class="Headline">For_Testing</p></div> <script>window.onload = blockAtTime(23,00,9,50,"timeID0");</script>
+    </body>
+</html>

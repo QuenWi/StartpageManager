@@ -1,0 +1,97 @@
+<html>
+    <head>  
+        <meta charset="utf-8" />
+        <title>Personal Startpage</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+        
+        <style>
+        .Headline{
+            font-size:250%;
+            color: ghostwhite;
+            font-family: 'Asap', sans-serif;
+            margin-bottom: 5px;
+            padding-top: 30px;
+            padding-left: 10px;
+            clear: both;
+        }    
+        .PageLink{
+            font-size:150%;
+            color: darkgray;
+            font-family: 'Asap', sans-serif;
+            margin-bottom:3px;
+            padding-left: 15px;
+            clear: both;
+        }
+        .PageLink:hover{
+            color: red;
+        }
+        #Background {
+            position: fixed;
+            z-index: -2;
+        }
+        </style>
+        
+        <script>
+        function blockAtTime(fromTimeHour, fromTimeMin, toTimeHour, toTimeMin, timeID) {
+            const currentDate = new Date();
+            const currentHour = currentDate.getHours();
+            const currentMin = currentDate.getMinutes();
+            if(fromTimeHour > toTimeHour || (fromTimeHour == toTimeHour && fromTimeMin > toTimeMin)){
+               if(fromTimeHour < currentHour || toTimeHour > currentHour){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren();
+                } else if (fromTimeHour == currentHour && toTimeHour == currentHour && fromTimeMin >= currentMin && toTimeMin <= currentMin){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren();
+                } else if(fromTimeHour == currentHour && fromTimeMin <= currentMin){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren(); 
+                } else if(toTimeHour == currentHour && toTimeMin >= currentMin){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren();
+                }
+            } else{ 
+                if(fromTimeHour < currentHour && toTimeHour > currentHour){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren();
+                } else if (fromTimeHour == currentHour && toTimeHour == currentHour && fromTimeMin <= currentMin && toTimeMin >= currentMin){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren();
+                } else if(fromTimeHour == currentHour && fromTimeMin <= currentMin){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren(); 
+                } else if(toTimeHour == currentHour && toTimeMin >= currentMin){
+                    let div = document.getElementById(timeID);
+                    div.replaceChildren();
+                }
+            }
+        }
+        </script>
+        
+    </head>
+    
+    
+    <body>        
+        <div id="Background"><img src="StartpageTemplates/Background.png";  width="100%"; height="auto";></div>
+<div><p class="Headline">Tools</p></div>
+<div><p><a href="https://translate.google.com/?sl=en&tl=de&op=translate&hl=de" class="PageLink" target="_blank">Google_Uebersetzter</a></p></div>
+<div><p><a href="https://www.google.de/maps" class="PageLink" target="_blank">Google_Maps</a></p></div>
+<div><p><a href="https://www.wikipedia.de/" class="PageLink" target="_blank">Wikipedia</a></p></div>
+<div><p><a href="https://web.whatsapp.com/" class="PageLink" target="_blank">WhatsApp_Web</a></p></div>
+<div><p class="Headline">AI_Tools</p></div>
+<div><p><a href="https://chat.openai.com/auth/login" class="PageLink" target="_blank">ChatGPT</a></p></div>
+<div><p><a href="https://www.deepl.com/de/translator" class="PageLink" target="_blank">DeepL</a></p></div>
+<div><p><a href="https://labs.openai.com/" class="PageLink" target="_blank">DALLE</a></p></div>
+<div><p><a href="https://www.craiyon.com/" class="PageLink" target="_blank">craiyon</a></p></div>
+<div><p class="Headline">Programmieren_Community_Forum</p></div>
+<div><p><a href="https://hashnode.com/explore/tags-following" class="PageLink" target="_blank">Hashnode</a></p></div>
+<div><p><a href="https://dev.to/latest" class="PageLink" target="_blank">Dev.to_Forum</a></p></div>
+<div><p><a href="https://stackoverflow.com/" class="PageLink" target="_blank">StackOverflow</a></p></div>
+<div><p><a href="https://www.kaggle.com/code" class="PageLink" target="_blank">Kaggle</a></p></div>
+<div><p><a href="https://news.ycombinator.com/" class="PageLink" target="_blank">HackerNews</a></p></div>
+<div><p><a href="https://www.indiehackers.com/" class="PageLink" target="_blank">IndieHackers</a></p></div>
+<div><p><a href="https://bootstrap.academy/skill-tree" class="PageLink" target="_blank">BootstrapAcademy</a></p></div>
+<div id="timeID0"><p class="Headline">For_Testing</p></div> <script>window.onload = blockAtTime(23,00,9,50,"timeID0");</script>
+    </body>
+</html>
