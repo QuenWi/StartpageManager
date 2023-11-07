@@ -10,6 +10,8 @@
 -"DALLE" "https://labs.openai.com/" ""
 -"craiyon" "https://www.craiyon.com/" ""
 
+#"Testing" "6:00-12:00" 
+
 #"Programmieren_Community_Forum" ""
 -"Hashnode" "https://hashnode.com/explore/tags-following" ""
 -"Dev.to_Forum" "https://dev.to/latest" ""
